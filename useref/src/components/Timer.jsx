@@ -14,7 +14,7 @@ const Timer = () => {
     const endTimer = () => {
         clearInterval(intervalRef.current);
     };
-
+    
   return (
     <div>
       <p>Time : {displayTime}s</p>
