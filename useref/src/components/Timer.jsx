@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react'
 const Timer = () => {
     const[displayTime, setDisplayTime] = useState(0);
     const intervalRef = useRef(null);
+    
 
     const startTimer = () => {
           if (intervalRef.current) return; // prevent multiple timers
@@ -14,7 +15,7 @@ const Timer = () => {
     const endTimer = () => {
         clearInterval(intervalRef.current);
     };
-    
+
   return (
     <div>
       <p>Time : {displayTime}s</p>
